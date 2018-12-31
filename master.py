@@ -29,9 +29,13 @@ def read():
 	cat = _cat.val()
 	noH = _noH.val()
 	return name,cat,noH
-while 1:
-	a,b,c = read()
-	print("NAME: ",a)
-	print("CATEGORY:",b)
-	print("NUM OF HEADS",c)
 
+def main():
+	reg()
+
+if __name__ == "__main__":
+   try:
+      main()
+   except KeyboardInterrupt:
+      # do nothing here
+      pass
